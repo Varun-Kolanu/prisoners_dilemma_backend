@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+
+
 const tournamentSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -9,8 +11,9 @@ const tournamentSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
-    winner: {
-        type: String,
+    rounds: {
+        type: Number,
+        required: true
     }
 })
 
